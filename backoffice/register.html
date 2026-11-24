@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Crea una cuenta en el backoffice de la biblioteca.">
+  <title>Crear cuenta · Biblioteca Backoffice</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="auth">
+    <aside class="auth__brand">
+      <a class="logo" href="login.html"><span class="logo__mark" aria-hidden="true"></span>Biblioteca</a>
+      <div>
+        <h2>Suma a tu equipo a la biblioteca.</h2>
+        <p>Crea tu cuenta y empieza a registrar préstamos en minutos.</p>
+      </div>
+    </aside>
+
+    <main class="auth__main">
+      <section class="card" aria-labelledby="titulo">
+        <h1 id="titulo">Crear cuenta</h1>
+        <p class="card__sub">Completa tus datos para comenzar.</p>
+
+        <form action="register.html" method="post" novalidate>
+          <div class="field">
+            <label for="name">Nombre completo</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="nombre@biblioteca.org" required>
+          </div>
+          <div class="field">
+            <label for="password">Contraseña</label>
+            <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" aria-describedby="pw-hint" required>
+            <p id="pw-hint" class="hint">Mínimo 8 caracteres.</p>
+          </div>
+          <button class="btn" type="submit">Crear cuenta</button>
+        </form>
+
+        <p class="switch">¿Ya tienes cuenta? <a href="login.html">Iniciar sesión</a></p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

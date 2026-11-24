@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Inicia sesión en el backoffice de la biblioteca.">
+  <title>Iniciar sesión · Biblioteca Backoffice</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="auth">
+    <aside class="auth__brand">
+      <a class="logo" href="login.html"><span class="logo__mark" aria-hidden="true"></span>Biblioteca</a>
+      <div>
+        <h2>Cada libro, en su lugar.</h2>
+        <p>Gestiona el catálogo, los préstamos y los socios de tu biblioteca.</p>
+      </div>
+    </aside>
+
+    <main class="auth__main">
+      <section class="card" aria-labelledby="titulo">
+        <h1 id="titulo">Iniciar sesión</h1>
+        <p class="card__sub">Ingresa con tu cuenta de bibliotecario.</p>
+
+        <form action="login.html" method="post" novalidate>
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="nombre@biblioteca.org" required>
+          </div>
+          <div class="field">
+            <label for="password">Contraseña</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required>
+          </div>
+          <button class="btn" type="submit">Iniciar sesión</button>
+        </form>
+
+        <p class="switch">¿No tienes cuenta? <a href="register.html">Crear cuenta</a></p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

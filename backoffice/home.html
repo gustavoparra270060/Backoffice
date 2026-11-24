@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=login.html">
+  <meta name="robots" content="noindex">
+  <title>Inicio · Biblioteca Backoffice</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="logo" href="home.html"><span class="logo__mark" aria-hidden="true"></span>Biblioteca</a>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="home.html" aria-current="page">Inicio</a></li>
+          <li><a href="home.html">Catálogo</a></li>
+          <li><a href="home.html">Préstamos</a></li>
+          <li><a href="home.html">Socios</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <h1>Inicio</h1>
+        <a class="btn btn--ghost" href="login.html">Cerrar sesión</a>
+      </header>
+
+      <dl class="stats">
+        <div class="stat"><dt>Libros en catálogo</dt><dd>3,420</dd></div>
+        <div class="stat"><dt>Préstamos activos</dt><dd>186</dd></div>
+        <div class="stat"><dt>Devoluciones atrasadas</dt><dd>9</dd></div>
+        <div class="stat"><dt>Socios</dt><dd>742</dd></div>
+      </dl>
+
+      <section class="panel" aria-labelledby="recientes">
+        <h2 id="recientes">Préstamos recientes</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Socio</th><th scope="col">Libro</th><th scope="col">Vence</th><th scope="col">Estado</th></tr></thead>
+            <tbody>
+              <tr><td>Ana Beltrán</td><td>Cien años de soledad</td><td>30 nov</td><td><span class="tag tag--ok">Al día</span></td></tr>
+              <tr><td>Luis Moreno</td><td>Pedro Páramo</td><td>25 nov</td><td><span class="tag">Vence pronto</span></td></tr>
+              <tr><td>Carla Ríos</td><td>El túnel</td><td>18 nov</td><td><span class="tag">Atrasado</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
